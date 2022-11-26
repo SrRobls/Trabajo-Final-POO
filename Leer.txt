@@ -1,0 +1,13 @@
+Antes de iniciar el programa, cree una base de datos en su MySQL Workbench así: 
+
+create database	dbDatos;
+use dbDatos;
+
+create table Datos(
+Id int not null auto_increment primary key,
+Cedula varchar(10),
+Nombres varchar(50),
+Apellidos varchar(50)
+);
+
+Conecte esta con el archivo Conector.jar del proyecto, en este hay unas instrucciones para poder conectar su MySQL.
